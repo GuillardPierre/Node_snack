@@ -7,11 +7,6 @@ const signAsync = promisify(jwt.sign);
 
 export const signup = async (req, res) => {
   const data = req.body;
-  if (!data.email || !data.password) {
-    res.status(400).send("Email and password are required");
-    return;
-  }
-
   const hashedPassword = await bcrypt.hash(data.password, 10);
 
   try {

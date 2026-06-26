@@ -19,32 +19,32 @@ const products = [
   {
     name: "Portion de frites",
     quantity: 25,
-    UserId: 1,
+    userId: 1,
   },
   {
     name: "Coca-Cola",
     quantity: 48,
-    UserId: 1,
+    userId: 1,
   },
   {
     name: "Sprite",
     quantity: 30,
-    UserId: 1,
+    userId: 1,
   },
   {
     name: "Chips",
     quantity: 50,
-    UserId: 2,
+    userId: 2,
   },
   {
     name: "Glace vanille",
     quantity: 15,
-    UserId: 2,
+    userId: 2,
   },
   {
     name: "Glace fraise",
     quantity: 20,
-    UserId: 2,
+    userId: 2,
   },
 ];
 
