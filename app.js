@@ -2,6 +2,7 @@ import { PrismaClient } from "./generated/prisma/client.js";
 import { PrismaMariaDb } from "@prisma/adapter-mariadb";
 import express from "express";
 import cors from "cors";
+import router from "./app/routes/index.js";
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(
   }),
 );
 app.use(express.json());
+app.use("/api", router);
 
 export default app;
 
